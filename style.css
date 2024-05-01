@@ -22,7 +22,7 @@ body{
 }
 
 .navbar__s1__tittle{
-    color: #c198ff;
+    color: #7c2ef1;
 
 }
 
@@ -66,11 +66,14 @@ outline: none;
     padding: 20px;
     right: 0;
     display: none;
+    
+    
 
 }
 
 .MyLearning:hover .MyLearning__popup{
     display: block;
+    
 }
 
 .categories{
@@ -82,11 +85,27 @@ justify-content: space-around;
 }
 
 .categories p{
-    background-color: #c198ff;
+    background-color: #7c2ef1;
     color: azure;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    border: solid #7c2ef1;
 }
+.categories p:hover{
+transition: 1s;
+background-color: transparent;
+color: black;
+border: solid #7c2ef1;
+
+    
+}
+
+
+
+
+
 .saleimage{
     position: relative;
 }
@@ -105,6 +124,23 @@ padding: 2%;
 position: absolute;
 top: 10%;
 left: 5%;
+animation-name: zoom;
+animation-duration: 2s;
+opacity: 1;
+animation-fill-mode: initial;
+
+}
+
+@keyframes zoom {
+0%{
+    transform:scale(0);
+    opacity: 0;
+}
+
+100%{
+    transform: scale(1);
+    opacity: 1;
+}
 
 }
 
